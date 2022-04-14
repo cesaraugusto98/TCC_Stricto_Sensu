@@ -1,4 +1,4 @@
-# TCC Strictu Sensu - Algoritimo de Classifição Binaria: Melanoma versus Nevus.
+# TCC Strictu Sensu - Algoritmo de Classificação Binária: Melanoma versus Nevus.
 
 Este repositório contém documentos e códigos referentes ao meu trabalho de conclusão de curso da PUC Minas Virtual (Stricto Sensu  em Big Data e Ciência de Dados)
 
