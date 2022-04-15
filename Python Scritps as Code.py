@@ -4,7 +4,7 @@
 from IPython import get_ipython
 
 # %% [markdown]
-# # TCC Strictu Sensu - Skin Cancer detector
+# # TCC Strictu Sensu - Algoritmo de Classificação Binária: Melanoma versus Nevus.
 # %% [markdown]
 # ## 1. Definição do Problema
 # 
