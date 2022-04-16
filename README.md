@@ -22,4 +22,4 @@ A princípio através de input manual nesse projeto, mas no futuro usuários pod
 
 ## Workflow do Projeto
 
-![Data Science Workflow Canvas](https://github.com/cesaraugusto98/TCC_Stricto_Sensu/blob/main/imagens_resultados/TCC-workflow-canvas.png)
+![Data Science Workflow Canvas](https://github.com/cesaraugusto98/TCC_Stricto_Sensu/blob/main/Imagens/TCC-workflow-canvas.png)
