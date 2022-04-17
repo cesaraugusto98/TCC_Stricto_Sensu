@@ -5,6 +5,7 @@ from IPython import get_ipython
 
 # %% [markdown]
 # # TCC Strictu Sensu - Algoritmo de Classificação Binária: Melanoma versus Nevus.
+# 
 # %% [markdown]
 # ## 1. Definição do Problema
 # 
@@ -164,7 +165,7 @@ pele_df = pd.read_csv('dataset_final/classificacao_dataset.csv')
 print(pele_df.head())
 np.random.seed(42)
 
-SIZE=64
+SIZE=224
 
 
 # %%
@@ -190,7 +191,7 @@ fig, m_axs = plt.subplots(2, num_exemplos, figsize = (4*num_exemplos, 2*3))
 for n_axs, (type_name, type_rows) in zip(m_axs, 
                                          pele_df_img.sort_values(['type']).groupby('type')):
     n_axs[0].set_title(type_name)
-    for c_ax, (_, c_row) in zip(n_axs, type_rows.sample(num_exemplos, random_state=1234).iterrows()):
+    for c_ax, (_, c_row) in zip(n_axs, type_rows.sample(num_exemplos, random_state=64).iterrows()):
         c_ax.imshow(c_row['imagem'])
         c_ax.axis('off')
 
@@ -725,7 +726,7 @@ get_ipython().system('pwd')
 # %% [markdown]
 # Por favor visite o Documento: 
 # 
-# https://github.com/cesaraugusto98/tcc_pos/blob/main/imagens_resultados/TCC-workflow-canvas.png
+# https://github.com/cesaraugusto98/TCC_Stricto_Sensu/blob/main/Imagens/TCC-workflow-canvas.png
 # %% [markdown]
 # ## 8. Referencias
 # Tschandl, Philipp, 2018, "The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions", https://doi.org/10.7910/DVN/DBW86T, Harvard Dataverse, V3, UNF:6:/APKSsDGVDhwPBWzsStU5A== [fileUNF]
@@ -757,3 +758,4 @@ get_ipython().system('pwd')
 # Different Types od CNN Models | https://iq.opengenus.org/different-types-of-cnn-models/
 # 
 # A Data Science Workflow Canvas to Kickstart Your Projects | https://towardsdatascience.com/a-data-science-workflow-canvas-to-kickstart-your-projects-db62556be4d0
+
